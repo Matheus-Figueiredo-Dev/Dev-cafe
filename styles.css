@@ -174,6 +174,43 @@ main {
 	}
 }
 
+@media screen and (max-width: 1137px) {
+	h1 {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: 1069px) {
+	h1 {
+		font-size: 2.8rem;
+	}
+}
+
+@media screen and (max-width: 1035px) {
+	h1 {
+		font-size: 2.6rem;
+	}
+
+	.img-home {
+		width: 450px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	main {
+		min-height: 550px;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.home-text {
+		text-align: center;
+	}
+}
+
 @media screen and (max-width: 870px) {
 	.logo a {
 		font-size: 1.4rem;
@@ -186,10 +223,24 @@ main {
 
 @media screen and (max-width: 600px) {
 	header {
-		padding: 0;
+		padding: 0 auto;
 	}
 
 	.logo a {
 		font-size: 1.5rem;
+	}
+
+	.container-home {
+		padding: 50px 0;
+	}
+
+	h1 {
+		font-size: 2.4rem;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	h1 {
+		font-size: 2rem;
 	}
 }
