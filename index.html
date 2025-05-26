@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>DevCafe</title>
 </head>
@@ -39,7 +40,7 @@
     </header>
     <main>
         <section class="container-home">
-            <div class="grid">
+            <div class="grid" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 <div class="home-text">
                     <h1>Nós servimos o <span>café</span> mais rico da cidade.</h1>
                     <button class="button-home">Café e Código</button>
@@ -50,8 +51,8 @@
             </div>
         </section>
         <section class="services">
-            <h2>O café perfeito para você</h2>
-            <div class="grid-card">
+            <h2 data-aos="fade-up" data-aos-delay="100">O café perfeito para você</h2>
+            <div class="grid-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="card">
                     <img src="img/american.png" alt="Cafe-americano" class="image-card">
                     <h3>Americano</h3>
@@ -78,5 +79,12 @@
         </section>
     </main>
 </body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1200
+    });
+</script>
 
 </html>
