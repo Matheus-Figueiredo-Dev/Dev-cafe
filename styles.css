@@ -247,6 +247,20 @@ p {
 	color: #fff;
 }
 
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #270c03;
+	padding: 1rem;
+
+	p {
+		font-family: "Pacifico", cursive;
+		color: #fff;
+		font-size: 1.5rem;
+	}
+}
+
 @media screen and (max-width: 1137px) {
 	h1 {
 		font-size: 3rem;
