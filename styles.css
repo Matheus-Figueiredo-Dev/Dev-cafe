@@ -9,9 +9,10 @@ html {
 	scroll-behavior: smooth;
 }
 
-/*body {
-	overflow: hidden;
-}*/
+body {
+	width: 100%;
+	overflow-x: hidden;
+}
 
 header {
 	background-image: linear-gradient(to right, #4a1e1b, #4a1e1be6);
@@ -23,7 +24,7 @@ header {
 }
 
 .container-header {
-	padding: 0.5rem 1 rem;
+	padding: 0.5rem 1rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -275,8 +276,10 @@ p {
 	}
 
 	.grid {
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.home-text {
@@ -294,10 +297,28 @@ p {
 	}
 }
 
+@media screen and (max-width: 770px) {
+	.grid {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.grid-card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
 @media screen and (max-width: 600px) {
 	header {
 		margin: 0 auto;
 		padding: 0 1rem;
+	}
+
+	h1 {
+		font-size: 0.05rem;
 	}
 
 	.logo a {
