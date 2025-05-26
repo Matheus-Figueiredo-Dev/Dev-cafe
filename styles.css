@@ -9,9 +9,9 @@ html {
 	scroll-behavior: smooth;
 }
 
-body {
+/*body {
 	overflow: hidden;
-}
+}*/
 
 header {
 	background-image: linear-gradient(to right, #4a1e1b, #4a1e1be6);
@@ -108,6 +108,7 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 }
 
 .container-home {
@@ -192,7 +193,9 @@ main {
 	}
 
 	.img-home {
-		width: 450px;
+		max-width: 100%;
+		height: auto;
+		display: block;
 	}
 }
 
@@ -223,7 +226,8 @@ main {
 
 @media screen and (max-width: 600px) {
 	header {
-		padding: 0 auto;
+		margin: 0 auto;
+		padding: 0 1rem;
 	}
 
 	.logo a {
