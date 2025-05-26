@@ -157,7 +157,8 @@ main {
 }
 
 .img-home {
-	width: 550px;
+	width: 100%;
+	max-width: 550px;
 	transform: scale(1.25);
 	animation: balanco 5s linear infinite;
 }
@@ -329,6 +330,10 @@ p {
 		padding: 50px 0;
 	}
 
+	.img-home {
+		transform: scale(1);
+	}
+
 	h1 {
 		font-size: 2.4rem;
 	}
@@ -337,5 +342,9 @@ p {
 @media screen and (max-width: 460px) {
 	h1 {
 		font-size: 2rem;
+	}
+
+	.img-home {
+		transform: scale(1);
 	}
 }
